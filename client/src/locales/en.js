@@ -6,6 +6,7 @@ export default {
     orders: 'Orders',
     finance: 'Finance',
     demandForecast: 'Demand Forecast',
+    restocking: 'Restocking',
     companyName: 'Catalyst Components',
     subtitle: 'Inventory Management System'
   },
@@ -112,6 +113,10 @@ export default {
     onTimeDelivery: 'On-Time Delivery',
     itemsCount: '{count} items',
     quantity: 'Qty',
+    submittedOrders: 'Submitted Orders',
+    leadTime: 'Lead Time',
+    days: '{count} days',
+    noSubmittedOrders: 'No submitted restocking orders yet',
     table: {
       orderNumber: 'Order Number',
       orderId: 'Order ID',
@@ -188,6 +193,39 @@ export default {
     }
   },
 
+  // Restocking
+  restocking: {
+    title: 'Restocking',
+    description: 'Set a budget to get a recommended restocking order based on forecasted demand growth',
+    budgetLabel: 'Restocking budget',
+    recommendedItems: 'Recommended Items',
+    table: {
+      sku: 'SKU',
+      itemName: 'Item Name',
+      trend: 'Trend',
+      forecastedDemand: 'Forecasted Demand',
+      quantity: 'Order Qty',
+      unitCost: 'Unit Cost',
+      lineCost: 'Line Cost',
+      leadTime: 'Lead Time'
+    },
+    partial: 'Partial',
+    notFunded: '{count} items not funded at this budget',
+    orderTotal: 'Order Total',
+    budget: 'Budget',
+    remaining: 'Remaining Budget',
+    orderLeadTime: 'Order Lead Time',
+    overBudget: 'Order total exceeds the budget',
+    placeOrder: 'Place Order',
+    placing: 'Placing...',
+    success: 'Order {orderNumber} submitted. Lead time: {days} days.',
+    viewOrders: 'View in Orders',
+    error: 'Failed to place order: {message}',
+    loadError: 'Failed to load forecasts: {message}',
+    empty: 'Increase the budget to see recommended items.',
+    days: '{count} days'
+  },
+
   // Filters
   filters: {
     timePeriod: 'Time Period',
@@ -206,7 +244,8 @@ export default {
     backordered: 'Backordered',
     inStock: 'In Stock',
     lowStock: 'Low Stock',
-    adequate: 'Adequate'
+    adequate: 'Adequate',
+    submitted: 'Submitted'
   },
 
   // Trends

@@ -6,6 +6,7 @@ export default {
     orders: '注文',
     finance: '財務',
     demandForecast: '需要予測',
+    restocking: '補充発注',
     companyName: '触媒コンポーネンツ',
     subtitle: '在庫管理システム'
   },
@@ -111,6 +112,10 @@ export default {
     avgOrderValue: '平均注文額',
     onTimeDelivery: '定時配達',
     itemsCount: '{count}件',
+    submittedOrders: '送信済み注文',
+    leadTime: 'リードタイム',
+    days: '{count}日',
+    noSubmittedOrders: '送信済みの補充発注はまだありません',
     quantity: '数量',
     table: {
       orderNumber: '注文番号',
@@ -188,6 +193,39 @@ export default {
     }
   },
 
+  // Restocking
+  restocking: {
+    title: '補充発注',
+    description: '予算を設定すると、予測需要の伸びに基づく推奨補充発注が表示されます',
+    budgetLabel: '補充予算',
+    recommendedItems: '推奨品目',
+    table: {
+      sku: 'SKU',
+      itemName: '品目名',
+      trend: 'トレンド',
+      forecastedDemand: '予測需要',
+      quantity: '発注数量',
+      unitCost: '単価',
+      lineCost: '明細金額',
+      leadTime: 'リードタイム'
+    },
+    partial: '一部のみ',
+    notFunded: 'この予算では{count}品目が対象外です',
+    orderTotal: '発注合計',
+    budget: '予算',
+    remaining: '残り予算',
+    orderLeadTime: '発注リードタイム',
+    overBudget: '発注合計が予算を超えています',
+    placeOrder: '発注する',
+    placing: '発注中...',
+    success: '注文{orderNumber}を送信しました。リードタイム: {days}日',
+    viewOrders: '注文で確認',
+    error: '発注に失敗しました: {message}',
+    loadError: '予測の読み込みに失敗しました: {message}',
+    empty: '予算を増やすと推奨品目が表示されます。',
+    days: '{count}日'
+  },
+
   // Filters
   filters: {
     timePeriod: '期間',
@@ -206,7 +244,8 @@ export default {
     backordered: 'バックオーダー',
     inStock: '在庫あり',
     lowStock: '在庫僅少',
-    adequate: '適量'
+    adequate: '適量',
+    submitted: '送信済み'
   },
 
   // Trends
